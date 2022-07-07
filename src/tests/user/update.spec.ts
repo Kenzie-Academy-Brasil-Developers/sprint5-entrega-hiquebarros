@@ -1,4 +1,4 @@
-import { AppDataSource } from "../../data-source";
+import AppDataSource from "../../data-source";
 import { DataSource } from "typeorm";
 import app from "../../app";
 import request from "supertest";
@@ -15,14 +15,14 @@ describe("Teste para metodo PATCH em /users/:id", () => {
 
   let testUser1: User = {
     name: "Daniel Kenzie",
-    email: "daniel@kenzie.com",
+    email: "daniel3@kenzie.com",
     password: "123456Ab!",
     age: 21,
   };
 
   let testUser2: User = {
     name: "Ugo Kenzie",
-    email: "ugo@kenzie.com",
+    email: "ugo3@kenzie.com",
     password: "123456Ab!",
     age: 18,
   };

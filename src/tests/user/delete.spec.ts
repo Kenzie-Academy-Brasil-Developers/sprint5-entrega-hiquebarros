@@ -1,4 +1,4 @@
-import { AppDataSource } from "../../data-source";
+import AppDataSource from "../../data-source";
 import { DataSource } from "typeorm";
 import app from "../../app";
 import request from "supertest";
@@ -15,7 +15,7 @@ describe("Teste para metodo DELETE em /users/:id", () => {
 
   let testUser1: User = {
     name: "Daniel Kenzie",
-    email: "daniel@kenzie.com",
+    email: "daniel2@kenzie.com",
     password: "123456Ab!",
     age: 21,
   };
